@@ -7,7 +7,6 @@
 
 ## <div align="center">Downloads</div>
 
-*Step1* - 下載
 ```bash
 git clone https://github.com/FantasyWilly/AESIL-CameraExtra.git
 ```
