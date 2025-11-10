@@ -1,4 +1,4 @@
-# <div align="center">AESIL - Camera</div>
+# <div align="center">AESIL - CameraExtra</div>
 
 ## <div align="center">Outline</div>
 
@@ -12,7 +12,7 @@ git clone https://github.com/FantasyWilly/AESIL-CameraExtra.git
 ```
 ---
 
-## <div align="center">CameraExtra</div>
+## <div align="center">Camera</div>
 
   ### [ XF 系列 ]
 
