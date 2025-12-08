@@ -115,7 +115,7 @@ def build_packet(
         # 將四個坐標統一轉為整數列表
         coords = [int(x0), int(y0), int(x1), int(y1)]
         
-        # 為每個整數生成 2 字節小端表示，並保存到列表
+        # 為每個整數生成 2 字節小端表示, 並保存到列表
         byte_chunks = []
         for c in coords:
             byte_chunks.append(c.to_bytes(2, byteorder='little'))
