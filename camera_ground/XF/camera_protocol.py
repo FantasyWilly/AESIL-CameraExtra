@@ -85,7 +85,7 @@ def build_packet(
         sub_frame
     )
 
-    # ------------------------------ Step2. 指令編寫區 --------------------------------- #
+    # --------------------------- Step2. 特殊指令編寫區 -------------------------------- #
     # 無指令(0x00) → 角度控制：roll(5–7)、yaw(7–9)、pitch(9–11)、結尾標誌 0x04
     if command == 0x00 and (pitch is not None or yaw is not None):
         pitch_value = int(pitch * 100)
@@ -98,7 +98,7 @@ def build_packet(
         payload[11]     = 0x04
 
     # 指令 (0x17) 追蹤模式, (0x1A) 指點平移
-    valid_params == None
+    valid_params = None
     if command == 0x17:
         valid_params = (b'\x01\x01', b'\x01\x00')
     elif command == 0x1A:

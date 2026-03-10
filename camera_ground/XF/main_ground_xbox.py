@@ -37,14 +37,14 @@ from gcu_controller import GCUController
 # ------------------------------------------------------------------------------------ #
 # TCP 連線 <IP:Port> 
 # ------------------------------------------------------------------------------------ #
-DEVICE_IP = "192.168.168.111"     # Server IP
+DEVICE_IP = "192.168.50.73"     # Server IP
 DEVICE_PORT = 9999                # Server Port 
 
 
 # ------------------------------------------------------------------------------------ #
 # 影像串流 <CAMERA_URL>
 # ------------------------------------------------------------------------------------ #
-CAMERA_URL  = 'rtsp://user:user@192.168.168.108:554/cam/realmonitor?channel=1&subtype=0'
+CAMERA_URL  = 'rtsp://192.168.50.73:8554/live/stream'
 
 
 # ------------------------------------------------------------------------------------ #
@@ -174,7 +174,7 @@ def main() -> None:
         print(f"[CAMERA_URL] 畫面大小: {width}x{height}")
 
     # 建立 TCP 連線物件 - [GCUController]
-    controller = GCUController(DEVICE_IP, DEVICE_PORT)
+    controller = GCUController(DEVICE_IP, DEVICE_PORT, width, height)
 
     try:
         # 1. TCP 連線
