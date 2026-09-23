@@ -38,7 +38,7 @@ from gcu_controller import GCUController
 # TCP 連線 <IP:Port> 
 # ------------------------------------------------------------------------------------ #
 DEVICE_IP = "192.168.50.73"     # Server IP
-DEVICE_PORT = 9999                # Server Port 
+DEVICE_PORT = 9999              # Server Port 
 
 
 # ------------------------------------------------------------------------------------ #

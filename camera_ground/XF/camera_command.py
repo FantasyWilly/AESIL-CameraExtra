@@ -22,7 +22,7 @@ SPDX-License-Identifier: Apache-2.0
 # Imports
 # ------------------------------------------------------------------------------------ #
 # 專案內部模組
-from lib.gcu_controller import GCUController
+from gcu_controller import GCUController
 
 
 # ------------------------------------------------------------------------------------ #
